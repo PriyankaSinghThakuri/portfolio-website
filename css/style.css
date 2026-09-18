@@ -782,6 +782,11 @@ img {
 }
 
 .about__img {
+  /* Below 576px the about grid is single-column, so this would stack
+     directly under the hero photo a few hundred px above it - the same
+     face twice in a row with barely any text between. Only show it once
+     there's room for the proper side-by-side layout. */
+  display: none;
   justify-self: center;
   padding: 10px;
   border-radius: calc(var(--radius) + 10px);
@@ -1212,6 +1217,9 @@ img {
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 576px) {
+  .about__img {
+    display: block;
+  }
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
