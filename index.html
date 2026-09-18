@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priyanka Singh Thakuri | Frontend Engineer</title>
+    <meta
+      name="description"
+      content="Priyanka Singh Thakuri is a Frontend Engineer specializing in React, TypeScript, and .NET. View projects, experience, and skills."
+    />
+    <meta
+      name="keywords"
+      content="Priyanka Singh Thakuri, Frontend Engineer, React Developer, Full Stack Developer, React Developer Nepal, TypeScript Developer, Web Developer Kathmandu"
+    />
+    <meta name="author" content="Priyanka Singh Thakuri" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://priyankasinghthakuri.com.np/" />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- =====OPEN GRAPH ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://priyankasinghthakuri.com.np/" />
+    <meta
+      property="og:title"
+      content="Priyanka Singh Thakuri | Frontend Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Frontend Engineer specializing in React, TypeScript, and .NET."
+    />
+    <meta
+      property="og:image"
+      content="https://priyankasinghthakuri.com.np/images/profilepic.jpeg"
+    />
+    <meta property="og:site_name" content="Priyanka Singh Thakuri" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- =====TWITTER CARD ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Priyanka Singh Thakuri | Frontend Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="Frontend Engineer specializing in React, TypeScript, and .NET."
+    />
+    <meta
+      name="twitter:image"
+      content="https://priyankasinghthakuri.com.np/images/profilepic.jpeg"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image" href="./images/profilepic.jpeg" />
+
+    <!-- =====STRUCTURED DATA ===== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Priyanka Singh Thakuri",
+        "url": "https://priyankasinghthakuri.com.np/",
+        "image": "https://priyankasinghthakuri.com.np/images/profilepic.jpeg",
+        "jobTitle": "Frontend Engineer",
+        "description": "Frontend Engineer specializing in React, TypeScript, and .NET.",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Educonnect Nepal"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Islington College (London Metropolitan University)"
+        },
+        "sameAs": [
+          "https://github.com/PriyankaSinghThakuri",
+          "https://www.linkedin.com/in/priyankasinghthakuri"
+        ]
+      }
+    </script>
+
+    <script>
+      (function () {
+        var theme = localStorage.getItem("theme");
+        if (!theme) {
+          theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!--
+      Liquid Glass is an Apple-platform-only material; this page approximates
+      the look with backdrop-filter + layered borders/highlights in native CSS.
+    -->
+    <div class="bg-orbs" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+
+    <!--
+      Follow cursor: a small dot glued to the pointer plus a lagging glass
+      ring that trails behind it (spring-eased in JS). Only enabled on
+      fine-pointer devices - see js/main.js and the (hover:hover) and
+      (pointer:fine) guard in css/style.css.
+    -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true">
+      <span class="cursor-lens-text"></span>
+    </div>
+
+    <!--===== HEADER =====-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-grid">
+        <a href="#home" class="nav__logo">Priyanka<span>.</span></a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">Experience</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+            <!-- <li class="nav__item">
+              <a
+                href="./images/Priyanka_Singh_Thakuri_Resume.pdf"
+                class="nav__link"
+                target="_blank"
+                rel="noopener"
+                >Resume</a
+              >
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="nav__actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle dark mode"
+            type="button"
+          >
+            <i class="bx bx-moon"></i>
+          </button>
+          <div class="nav__toggle nav__toggle-btn" id="nav-toggle">
+            <i class="bx bx-menu"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data" data-reveal>
+          <span class="home__badge">Open to new opportunities</span>
+          <h1 class="home__title">
+            Hi, I'm
+            <span class="home__title-color">Priyanka Singh Thakuri</span>
+          </h1>
+          <h2 class="home__subtitle">Frontend Engineer</h2>
+          <p class="home__text">
+            I build dynamic, responsive web applications with React and
+            TypeScript - focused on clean component architecture, state
+            management, and front-end best practices.
+          </p>
+
+          <div class="home__buttons">
+            <a href="#projects" class="button">View Projects</a>
+            <a href="#contact" class="button button--ghost">Get In Touch</a>
+          </div>
+
+          <div class="home__social">
+            <a
+              href="https://github.com/PriyankaSinghThakuri"
+              class="home__social-icon"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/priyankasinghthakuri"
+              class="home__social-icon"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              href="mailto:priyankasinghthakuri57@gmail.com"
+              target="_blank"
+              rel="noopener"
+              class="home__social-icon"
+              aria-label="Email"
+              ><i class="bx bx-envelope"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="home__img" data-reveal data-reveal-delay="1">
+          <div class="home__img-ring">
+            <img
+              src="./images/profilepic.jpeg"
+              alt="Priyanka Singh Thakuri, Frontend Engineer"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <div class="about__container bd-grid">
+          <div class="about__img" data-reveal>
+            <img src="./images/profilepic.jpeg" alt="Priyanka Singh Thakuri" />
+          </div>
+
+          <div data-reveal data-reveal-delay="1">
+            <h2 class="section-title" style="margin-bottom: 1.1rem">
+              About Me
+            </h2>
+            <h3 class="about__subtitle">
+              Frontend Engineer with 4+ years of experience
+            </h3>
+            <p class="about__text">
+              I'm a passionate Frontend / Full-Stack Developer based in
+              Kathmandu, Nepal, specializing in building scalable web
+              applications with React, TypeScript, and .NET. I enjoy solving
+              complex problems, collaborating with teams, and continuously
+              learning new technologies - having worked across the full
+              development lifecycle from frontend design to backend logic and
+              API integration.
+            </p>
+            <p class="about__text">
+              I hold a BSc (Hons) in Computing from Islington College, in
+              affiliation with London Metropolitan University.
+            </p>
+
+            <div class="about__stats">
+              <div class="about__stat">
+                <span class="about__stat-number">4+</span>
+                <span class="about__stat-label">Years Experience</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-number">5+</span>
+                <span class="about__stat-label">Major Projects</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-number">4</span>
+                <span class="about__stat-label">Companies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <div class="section-head bd-grid">
+          <h2 class="section-title">Skills</h2>
+        </div>
+
+        <div class="skills__container bd-grid">
+          <div class="skills__card skills__card--wide" data-reveal>
+            <div class="skills__card-head">
+              <i class="bx bx-layer skills__card-icon"></i>
+              <h3 class="skills__card-title">Frameworks &amp; Libraries</h3>
+            </div>
+            <div class="skills__tags">
+              <span class="tag">React.js</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">Redux Toolkit</span>
+              <span class="tag">RTK Query</span>
+              <span class="tag">React Query</span>
+              <span class="tag">Formik</span>
+              <span class="tag">Yup</span>
+              <span class="tag">React Hook Form</span>
+              <span class="tag">Material UI</span>
+              <span class="tag">Kendo React</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">Shadcn UI</span>
+              <span class="tag">Swagger UI</span>
+            </div>
+          </div>
+
+          <div class="skills__card" data-reveal data-reveal-delay="1">
+            <div class="skills__card-head">
+              <i class="bx bx-code-alt skills__card-icon"></i>
+              <h3 class="skills__card-title">Languages</h3>
+            </div>
+            <div class="skills__tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">C#</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3 / SCSS</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skills__card" data-reveal>
+            <div class="skills__card-head">
+              <i class="bx bx-data skills__card-icon"></i>
+              <h3 class="skills__card-title">Databases</h3>
+            </div>
+            <div class="skills__tags">
+              <span class="tag">MySQL</span>
+              <span class="tag">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="skills__card" data-reveal data-reveal-delay="1">
+            <div class="skills__card-head">
+              <i class="bx bx-terminal skills__card-icon"></i>
+              <h3 class="skills__card-title">Tools &amp; Technologies</h3>
+            </div>
+            <div class="skills__tags">
+              <span class="tag">Git</span>
+              <span class="tag">Linux</span>
+              <span class="tag">REST API</span>
+              <span class="tag">.NET Framework</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== EXPERIENCE =====-->
+      <section class="experience section" id="experience">
+        <div class="section-head section-head--center bd-grid">
+          <h2 class="section-title">Experience</h2>
+        </div>
+
+        <div class="experience__container bd-grid">
+          <div class="experience__item" data-reveal>
+            <div class="experience__dot"></div>
+            <div class="experience__card">
+              <span class="experience__date">Jul 2025 - Present</span>
+              <h3 class="experience__role">Frontend Developer</h3>
+              <span class="experience__company"
+                >Educonnect Nepal · Anamnagar, Kathmandu</span
+              >
+              <ul class="experience__list">
+                <li>
+                  Developed responsive, cross-browser user interfaces using
+                  React.js and Bootstrap, building reusable components from
+                  design mockups.
+                </li>
+                <li>
+                  Integrated REST APIs into React applications, handling
+                  asynchronous data fetching, state management, form validation
+                  and error handling to deliver reliable, data-driven features.
+                </li>
+                <li>
+                  Worked closely with backend developers and designers to
+                  translate requirements into working features, debugging
+                  cross-layer issues and participating in code reviews.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience__item" data-reveal data-reveal-delay="1">
+            <div class="experience__dot"></div>
+            <div class="experience__card">
+              <span class="experience__date">Apr 2024 - Jul 2025</span>
+              <h3 class="experience__role">Software Engineer</h3>
+              <span class="experience__company"
+                >Xylontech Nepal · Chandol, Kathmandu</span
+              >
+              <ul class="experience__list">
+                <li>
+                  Designed and developed responsive, user-friendly interfaces
+                  with React.js, JSX/TSX, Tailwind CSS and Shadcn UI,
+                  integrating Kendo React for advanced UI components.
+                </li>
+                <li>
+                  Developed scalable and efficient server-side logic using the
+                  .NET framework.
+                </li>
+                <li>
+                  Worked with SQL database schemas to store and manage records.
+                </li>
+                <li>
+                  Designed, documented and implemented RESTful APIs using
+                  Swagger for API specification and testing.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience__item" data-reveal>
+            <div class="experience__dot"></div>
+            <div class="experience__card">
+              <span class="experience__date">Jan 2023 - Mar 2024</span>
+              <h3 class="experience__role">Frontend Developer</h3>
+              <span class="experience__company"
+                >ShadesnShadows · Buddhanagar, Kathmandu</span
+              >
+              <ul class="experience__list">
+                <li>
+                  Designed and built dynamic, responsive user interfaces using
+                  React.js, JSX and Material UI, integrating Redux for efficient
+                  state management.
+                </li>
+                <li>
+                  Contributed to team discussions and brainstorming sessions,
+                  offering fresh perspectives to drive project success.
+                </li>
+                <li>
+                  Actively sought guidance from senior developers to deepen
+                  technical skills and industry-standard practices.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience__item" data-reveal data-reveal-delay="1">
+            <div class="experience__dot"></div>
+            <div class="experience__card">
+              <span class="experience__date">Sep 2022 - Dec 2022</span>
+              <h3 class="experience__role">React JS Intern</h3>
+              <span class="experience__company"
+                >Innovate Tech · Baluwatar, Kathmandu</span
+              >
+              <ul class="experience__list">
+                <li>
+                  Developed responsive user interfaces using React.js
+                  components, JSX and Material UI, integrating Redux for state
+                  management.
+                </li>
+                <li>
+                  Supported fellow interns and team members by sharing knowledge
+                  and collaborating on problem-solving.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== PROJECTS =====-->
+      <section class="projects section" id="projects">
+        <div class="section-head bd-grid">
+          <span class="section-eyebrow">Selected work</span>
+          <h2 class="section-title">Projects</h2>
+        </div>
+
+        <div class="projects__panel bd-grid">
+          <div class="projects__list">
+            <article class="project__row" data-reveal>
+              <span class="project__index">01</span>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3 class="project__title">Meshed 2.0</h3>
+                </div>
+                <span class="project__role">Frontend Developer</span>
+                <p class="project__text">
+                  A comprehensive study-abroad platform connecting students,
+                  universities, course providers and agents in a single
+                  end-to-end workflow - from browsing and applying for courses
+                  to admin review, payments and agent/provider management across
+                  student, agent and admin portals.
+                </p>
+                <div class="project__tags">
+                  <span class="tag">React.js</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Redux</span>
+                  <span class="tag">RTK Query</span>
+                  <span class="tag">Bootstrap</span>
+                  <span class="tag">Material UI</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project__row" data-reveal>
+              <span class="project__index">02</span>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3 class="project__title">RFP (Request for Proposal)</h3>
+                </div>
+                <span class="project__role">Full-Stack Developer</span>
+                <p class="project__text">
+                  A bidding-process management system that streamlines the
+                  Request for Proposal workflow - efficiently managing requests,
+                  projects and vendor interactions from start to finish.
+                </p>
+                <div class="project__tags">
+                  <span class="tag">React.js</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">.NET Framework</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">Swagger</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project__row" data-reveal>
+              <span class="project__index">03</span>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3 class="project__title">Hamro Sewa</h3>
+                </div>
+                <span class="project__role">Full Stack Developer</span>
+                <p class="project__text">
+                  An all-in-one platform connecting service seekers with service
+                  providers, enabling seamless requests and delivery of
+                  skill-based services.
+                </p>
+                <div class="project__tags">
+                  <span class="tag">React.js</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">Express.js</span>
+                  <span class="tag">MongoDB</span>
+                  <span class="tag">Material UI</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project__row" data-reveal>
+              <span class="project__index">04</span>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3 class="project__title">Jinlap</h3>
+                </div>
+                <span class="project__role"
+                  >Frontend Developer · Team Member</span
+                >
+                <p class="project__text">
+                  A multi-service e-commerce platform offering a seamless
+                  shopping experience with dynamic product listings, cart
+                  management and checkout.
+                </p>
+                <div class="project__tags">
+                  <span class="tag">React.js</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Redux</span>
+                  <span class="tag">Material UI</span>
+                  <span class="tag">Bootstrap</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project__row" data-reveal>
+              <span class="project__index">05</span>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3 class="project__title">Himalayan Lush</h3>
+                  <a
+                    href="https://himalayanlush.com/"
+                    target="_blank"
+                    rel="noopener"
+                    class="project__link"
+                    aria-label="Visit himalayanlush.com"
+                    ><i class="bx bx-link-external"></i
+                  ></a>
+                </div>
+                <span class="project__role"
+                  >Frontend Developer · Team Member</span
+                >
+                <p class="project__text">
+                  An environmentally-focused web application showcasing
+                  naturally-prepared products and the process behind their
+                  production.
+                </p>
+                <div class="project__tags">
+                  <span class="tag">React.js</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Material UI</span>
+                  <span class="tag">Bootstrap</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--===== CERTIFICATIONS =====-->
+      <section class="certifications section" id="certifications">
+        <div class="section-head section-head--center bd-grid">
+          <h2 class="section-title">Achievements &amp; Learning</h2>
+        </div>
+
+        <div class="certifications__list bd-grid" data-reveal>
+          <div class="cert__row">
+            <i class="bx bx-badge-check cert__icon"></i>
+            <div>
+              <h3 class="cert__title">Learning React.js</h3>
+              <span class="cert__meta">Eve Porcello · LinkedIn Learning</span>
+            </div>
+          </div>
+          <div class="cert__row">
+            <i class="bx bx-badge-check cert__icon"></i>
+            <div>
+              <h3 class="cert__title">Node.js Training</h3>
+              <span class="cert__meta">Itonics · Virtual training</span>
+            </div>
+          </div>
+          <div class="cert__row">
+            <i class="bx bx-badge-check cert__icon"></i>
+            <div>
+              <h3 class="cert__title">Learning Python (2020)</h3>
+              <span class="cert__meta">Joe Marini · LinkedIn Learning</span>
+            </div>
+          </div>
+          <div class="cert__row">
+            <i class="bx bx-badge-check cert__icon"></i>
+            <div>
+              <h3 class="cert__title">
+                Certificate of Appreciation - Conquest Week 2022
+              </h3>
+              <span class="cert__meta">Volunteering</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <div class="section-head section-head--center bd-grid">
+          <h2 class="section-title">Get In Touch</h2>
+        </div>
+
+        <div class="contact__container bd-grid" data-reveal>
+          <p class="contact__text">
+            I'm always open to discussing new projects, opportunities or ideas.
+            Reach out through any of the channels below.
+          </p>
+
+          <div class="contact__grid">
+            <a
+              href="mailto:priyankasinghthakuri57@gmail.com"
+              target="_blank"
+              rel="noopener"
+              class="contact__card"
+            >
+              <i class="bx bx-envelope contact__icon"></i>
+              <span class="contact__label">Email</span>
+              <span class="contact__value"
+                >priyankasinghthakuri57@gmail.com</span
+              >
+            </a>
+            <a href="tel:+9779865601077" class="contact__card">
+              <i class="bx bx-phone contact__icon"></i>
+              <span class="contact__label">Phone</span>
+              <span class="contact__value">9865601077</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/priyankasinghthakuri"
+              target="_blank"
+              rel="noopener"
+              class="contact__card"
+            >
+              <i class="bx bxl-linkedin contact__icon"></i>
+              <span class="contact__label">LinkedIn</span>
+              <span class="contact__value">/in/priyankasinghthakuri</span>
+            </a>
+            <a
+              href="https://github.com/PriyankaSinghThakuri"
+              target="_blank"
+              rel="noopener"
+              class="contact__card"
+            >
+              <i class="bx bxl-github contact__icon"></i>
+              <span class="contact__label">GitHub</span>
+              <span class="contact__value">/PriyankaSinghThakuri</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--===== FOOTER =====-->
+      <footer class="footer">
+        <p class="footer__title">Priyanka Singh Thakuri</p>
+        <p class="footer__tagline">Frontend Engineer</p>
+        <div class="footer__social">
+          <a
+            href="https://github.com/PriyankaSinghThakuri"
+            class="footer__icon"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/priyankasinghthakuri"
+            class="footer__icon"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="mailto:priyankasinghthakuri57@gmail.com"
+            target="_blank"
+            rel="noopener"
+            class="footer__icon"
+            aria-label="Email"
+            ><i class="bx bx-envelope"></i
+          ></a>
+        </div>
+        <p class="footer__copy">
+          &#169; <span id="year"></span> Priyanka Singh Thakuri. All rights
+          reserved.
+        </p>
+      </footer>
+    </main>
+
+    <!--===== MAIN JS =====-->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
